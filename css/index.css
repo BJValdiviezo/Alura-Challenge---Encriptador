@@ -1,0 +1,57 @@
+header{
+  background:rgb(234, 98, 74);
+  padding:20px 0;
+  height: 30%;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+.title{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+main{
+  background: rgb(235, 177, 165);
+  height: 60;
+
+}
+.conditions{
+  width:940px;
+  padding: 50px 50px;
+  font-weight: bold;
+  margin-left: 10%;
+}
+.encryptor{
+  text-align: center;
+}
+.encryptor li{
+  display:inline-block;
+  text-align: center;
+  width:30%;
+  vertical-align:top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+}
+.text{
+  width: ;
+}
+.button{
+  display: inline;
+  font-size: 25px;
+  font-weight: bold;
+  background:rgb(234, 98, 74);
+  border-radius: 15px;
+}
+footer{
+  background: rgb(67, 43, 59);
+  height: 10%;
+  font-size: 12px;
+  text-align: center;
+  padding: 40px;
+}
+.copyright{
+  color: rgb(234, 98, 74);
+}

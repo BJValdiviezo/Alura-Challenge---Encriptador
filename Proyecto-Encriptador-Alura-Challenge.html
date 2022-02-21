@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title class="title-main">Alura Challenge - Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 class="title">Encriptador</h1>
+            </div>
+            
+        </header>
+        <main>
+        
+            <div class="conditions">
+                <p>El mensaje NO debe:</p>
+                <ul>
+                    <li>Poseer MAYUSCULAS</li>
+                    <li>Poseer caracteres especiales, ni acentos.</li>
+                </ul>
+            </div>
+            
+            <ul class="encryptor">
+                <li>
+
+                    <textarea id="text" cols="50" rows="20"placeholder="ingrese texto a encriptar o desencriptar"></textarea>
+                    <button id="encryptor" class ="button">Encriptar</button>
+                    <button id="decryptor" class ="button">Desencriptar</button>
+
+                </li>
+                <li>
+                    
+                    <textarea id="encrypted-text" cols="50" rows="20" placeholder="Texto Encriptado o Desencriptado"></textarea>
+                    <button id="copie" class="button">Copiar</button>
+
+                </li>
+            </ul>
+                
+            
+            
+            
+                
+            <script src = "js/encryptor.js"></script>
+            <script src = "js/decryptor.js"></script>
+            
+        </main>
+    <footer>
+        <p class="copyright">&copy Copyright Brian J. Valdiviezo-2022</p>
+    </footer>   
+    </body>
+</html>
