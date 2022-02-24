@@ -1,6 +1,7 @@
 header{
+  width: auto;
   background:rgb(234, 98, 74);
-  padding:20px 0;
+  padding:20px auto;
   height: 30%;
 }
 body{
@@ -15,32 +16,38 @@ body{
 }
 main{
   background: rgb(235, 177, 165);
-  height: 60;
-
+  height: 60%;
 }
 .conditions{
-  width:940px;
-  padding: 50px 50px;
   font-weight: bold;
-  margin-left: 10%;
+  font-size: 15px;
+  margin-left: 20px;
+  padding: 10px 10px;
+}
+.conditions li:before{
+  content: "•";
 }
 .encryptor{
-  text-align: center;
+  width:auto;
+  margin:0 auto;
+  padding: 50px;
 }
 .encryptor li{
   display:inline-block;
   text-align: center;
-  width:30%;
   vertical-align:top;
   margin: 0 1.5%;
-  padding: 30px 20px;
+  padding: 10px 30px;
+  
 }
-.text{
-  width: ;
+.textArea{
+  font-size: 15px;
+  display: block;
+
 }
+
 .button{
-  display: inline;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   background:rgb(234, 98, 74);
   border-radius: 15px;
@@ -54,4 +61,29 @@ footer{
 }
 .copyright{
   color: rgb(234, 98, 74);
+}
+@media screen and (max-width:480px) {
+  html{
+    height: auto;
+  }
+  .title{
+    height: 20%;
+    padding: 20px 20px;
+  }
+  body{
+    height: 60%;
+  }
+  footer{
+    height: 20%;
+  }
+  .conditions{
+    padding: 20px 20px;
+  }
+  .encryptor{
+    padding: 10px 20px ;
+  }
+  .encryptor button{
+    display: inline;
+  }
+ 
 }
