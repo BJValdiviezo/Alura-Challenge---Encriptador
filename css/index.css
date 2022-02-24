@@ -66,15 +66,17 @@ footer{
   html{
     height: auto;
   }
+  head{
+    width: auto;
+  }
   .title{
-    height: 20%;
     padding: 20px 20px;
   }
   body{
-    height: 60%;
+    width: auto;
   }
   footer{
-    height: 20%;
+    width: auto;
   }
   .conditions{
     padding: 20px 20px;
@@ -82,8 +84,12 @@ footer{
   .encryptor{
     padding: 10px 20px ;
   }
+  .encryptor li{
+    padding: 10px 10px;
+  }
   .encryptor button{
     display: inline;
+    margin: 5px 5px;
   }
  
 }
