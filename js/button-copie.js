@@ -1,12 +1,10 @@
-var inputCode = document.querySelector('#encrypted-text');
-    var boton = document.querySelector('#copie');
-    var copia = document.querySelector('.copia');
+ var copia = document.querySelector('.copia');
+    function copy() {
 
-    function botonHandler() {
-
-        copia.textContent = inputCode.value;
-        inputCode.value = "";
+        var inputCode = document.querySelector('#encrypted-text');
+        inputCode.select();
+        document.execCommand("#copie");
 
     }
 
-    boton .addEventListener('click', botonHandler);
+   document.querySelector("#copie").addEventListener("click", copy)

@@ -2,7 +2,7 @@ header{
   width: auto;
   background:rgb(234, 98, 74);
   padding:20px auto;
-  height: 30%;
+  height: 15%;
 }
 body{
   font-family: 'Nunito', sans-serif;
@@ -16,7 +16,7 @@ body{
 }
 main{
   background: rgb(235, 177, 165);
-  height: 60%;
+  height: 80%;
 }
 .conditions{
   font-weight: bold;
@@ -54,7 +54,7 @@ main{
 }
 footer{
   background: rgb(67, 43, 59);
-  height: 10%;
+  height: 5%;
   font-size: 12px;
   text-align: center;
   padding: 40px;
@@ -63,9 +63,6 @@ footer{
   color: rgb(234, 98, 74);
 }
 @media screen and (max-width:480px) {
-  html{
-    height: auto;
-  }
   head{
     width: auto;
   }
@@ -74,15 +71,21 @@ footer{
   }
   body{
     width: auto;
+    height: 940px;
   }
   footer{
     width: auto;
+    height: 1%;
   }
   .conditions{
     padding: 20px 20px;
+    margin-left: 10px;
   }
   .encryptor{
-    padding: 10px 20px ;
+    margin: 0 20px;
+    width: 300px;
+    padding: 10px 10px;
+
   }
   .encryptor li{
     padding: 10px 10px;
