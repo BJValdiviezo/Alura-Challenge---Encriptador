@@ -1,11 +1,12 @@
 header{
-  width: auto;
+  width: 940px;
   background:rgb(234, 98, 74);
   padding:20px auto;
   height: 15%;
 }
 body{
   font-family: 'Nunito', sans-serif;
+  width: 940px;
 }
 .title{
   font-size: 60px;
@@ -28,7 +29,7 @@ main{
   content: "•";
 }
 .encryptor{
-  width:auto;
+  width:700px;
   margin:0 auto;
   padding: 50px;
 }
