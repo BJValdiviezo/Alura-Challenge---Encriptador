@@ -36,8 +36,8 @@ main{
   display:inline-block;
   text-align: center;
   vertical-align:top;
-  margin: 0 1.5%;
-  padding: 10px 30px;
+  margin: 0 1%;
+  padding: 10px 10px;
   
 }
 .textArea{
@@ -51,6 +51,7 @@ main{
   font-weight: bold;
   background:rgb(234, 98, 74);
   border-radius: 15px;
+  margin-top: 10px;
 }
 footer{
   background: rgb(67, 43, 59);
