@@ -1,7 +1,9 @@
 var input =document.querySelector("#text");
 var button = document.querySelector("#encryptor");
+var form = document.querySelector(".form")
 
-button.addEventListener("click", function(){
+button.addEventListener("click", function(event){
+
 var encrypted = document.querySelector("#encrypted-text");
 var expresionA = new RegExp("[a]","ig");
 var expresionE = new RegExp("[e]","gi");
@@ -9,4 +11,5 @@ var expresionI = new RegExp("[i]","gi");
 var expresionO = new RegExp("[o]","gi");
 var expresionU = new RegExp("[u]","gi");
 encrypted.value= input.value.replace(expresionE,"enter").replace(expresionI,"imes").replace(expresionA,"ai").replace(expresionO,"ober").replace(expresionU,"ufat");
+form.reset();
 });
