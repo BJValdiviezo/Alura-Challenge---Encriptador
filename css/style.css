@@ -1,0 +1,130 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 25% 65% 10%;
+  background: url(/img/Background_-_02.jpg)no-repeat scroll;
+  
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  padding: 20px 10px;
+}
+
+button {
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  vertical-align: middle;
+  padding: 0.8em 1.2em;
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.06);
+  background-image: linear-gradient(#ffab66, #ef6c00);
+}
+
+button:hover {
+  background-image: linear-gradient(#ffc18f, #ff841f);
+}
+
+
+
+.title {
+  
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: auto;
+  color: tomato;
+  padding-top: 20px;
+}
+
+main {
+ 
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 25% 75%;
+  gap: 0.3rem;
+
+}
+form{
+  padding: 10px 30px;
+}
+.conditions {
+  grid-row: 1 / 2;
+  font-family: 'Simonetta', cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.conditions li:before {
+  content: "•";
+}
+.encryptor{
+  
+  grid-row: 2 / 3;
+  display: flex;
+  grid-row-gap: .5rem;
+  align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.entrada{
+  display: flex;
+  flex-direction: column;
+  
+}
+#text.textArea {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.buttons {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.salida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+#encrypted-text.textArea{
+  display: flex;
+  justify-content: center;
+}
+#copyButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: footer;
+  font-size: 12px;
+  text-align: center;
+  height: 100px;
+
+}
+
+.copyright {
+  color: rgb(234, 98, 74);
+}
