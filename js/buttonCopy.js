@@ -1,8 +1,9 @@
-const btnCopy = document.querySelector("#copy");
-btnCopy.addEventListener("click", ()=>{
-    const form = document.querySelector("#form-text")
-    const output =document.querySelector("#encrypted-text")
+const btnCopy = document.querySelector(".copy-button");
+btnCopy.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const output =document.querySelector("#text-encryter-or-decrypted")
     output.select();
     document.execCommand('copy');
-    form.reset();
+    output.value="";
+    btnCopy.textContent = "El mensaje fue copiado con Exito"
 });

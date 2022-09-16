@@ -7,68 +7,48 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title class="title-main">Encriptador</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Simonetta:ital,wght@1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div  class="title">
-            <h1>Encriptador</h1>
+    <header class="headerPrincipal">
+        <div class="container">
+            <h1 class="headerPrincipal--title">Encriptador</h1>
+            <div class="headerPrincipal--parraf">
+                <p>El mensaje a encriptar NO debe poseer:</p>
+                <p>Palabras o letras en MAYUSCULAS.</p>
+                <p>Caracteres especiales, ni acentos</p>
+            </div>
         </div>
-
     </header>
-    <main>
-        <div class="conditions">
-            <p>El mensaje a encriptar NO debe poseer:</p>
-            <ul>
-                <li>Palabras o letras en MAYUSCULAS.</li>
-                <li>Caracteres especiales, ni acentos.</li>
-            </ul>
+    <main class="main">
+        <div class="container">
+            <div class="encryptor">
+                <textarea name="messages" class="textArea" id="text" cols="50" rows="20"></textarea>
+                <div class="buttons">
+                    <button class="encryptor-button" data-encryptor>Encriptar</button>
+                    <button class="decryptor-button" data-decryptor>Desencriptar</button>
+                </div>
+                </div>
+            <div class="encrypted-decrypted">
+                <textarea name="messages-encryter-or-decrypted" class="textArea" id="text-encryter-or-decrypted" cols="50" rows="20"></textarea>
+                <button class="copy-button">Copiar</button>
+            </div>
         </div>
 
-        <ul class="encryptor">
-            <li class="entrada">
-                <form id="form-text" class="form">
-                    <div id="text" class="textArea">
-                        <textarea cols="70" rows="10"
-                            placeholder="ingrese texto a encriptar o  a desencriptar"></textarea>
-                    </div>
-                    <div class="buttons">
-                        <button id="encryptor" class="button" data-encripted>Encriptar</button>
-                        <button id="decryptor" class="button">Desencriptar</button>
-                    </div>
-                </form>
-
-            </li>
-            <li class="salida">
-                <form id="form-encrypted-text" class="form">
-                    <textarea id="encrypted-text" class="textArea" cols="70" rows="10"
-                        placeholder="Texto Encriptado o Desencriptado"></textarea>
-                    <div id="copyButton">
-                        <button class="button">Copiar</button>
-                    </div>
-                </form>
-            </li>
-        </ul>
-        <script src="js/buttonCopy.js"></script>
-        <script src="js/encryptor.js"></script>
-        <script src="js/decryptor.js"></script>
+        <script type="module" src="js/buttonCopy.js"></script>
+        <script type="module" src="./js/encryptor.js"></script>
+        <script type="module" src="js/decryptor.js"></script>
 
 
     </main>
-    <footer>
-        <p class="copyright">&copy Copyright Brian J. Valdiviezo-2022</p>
+    <footer class="footer">
+        <p class="footer-copyright">&copy Copyright Brian J. Valdiviezo-2022</p>
     </footer>
 </body>
 

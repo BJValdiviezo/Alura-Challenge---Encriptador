@@ -1,20 +1,26 @@
-@media (max-width: 768px) {
-    .title{
-        font-size: 50px;
-    }
-    .conditions{
-
-    }
-    .form{
-        width: auto;
-    }
-    .textArea{
-        width: 300px;
-    font-size: 100%;
-    }
-    .encryptor{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+@media (max-width: 981px) {
+    .headerPrincipal--title{
+        font-size: 45px;
+        padding: 20px 0;
+        transition: 4s;
+      }
+    .headerPrincipal--parraf{
+        font-size: 10px;
+        transition: 4s;
+      }
+    main .container{
+        flex-direction: column ;
+      }
+      .textArea{
+        height:150px;
+        transition: 4s;
+      }
+      button {
+        font-size: 5px;
+      }
+      .footer-copyright{
+        font-size: 10px;
+        transition: 4s;
+      }
+      
 }
